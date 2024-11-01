@@ -1,0 +1,104 @@
+body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: white;
+            color: #333;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky; /* ใช้ position: sticky */
+            top: 0; /* ตำแหน่งที่ติดอยู่ที่ด้านบน */
+            z-index: 1000; /* ทำให้ header อยู่เหนือเนื้อหาอื่น */
+        }
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: #333;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #73c2e4; /* เปลี่ยนสีเมื่อเอาเมาส์ไปวาง */
+            color: white; /* เปลี่ยนสีข้อความเป็นสีขาว */
+        }
+        .basket {
+            background-color: #73c2e4; /* สีพื้นหลังของ Basket */
+            color: white; /* สีข้อความของ Basket */
+        }
+        .search-container {
+            margin-right: 15px;
+        }
+        .search-container input {
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #e0e0e0; /* เปลี่ยนสีพื้นหลังเป็นสีเทา */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #73c2e4;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+          }
+          .fashion-guide {
+            display: flex;
+            justify-content: space-between; /* จัดเรียงให้อยู่ซ้ายขวา */
+            margin: 20px 0; /* ระยะห่างจากเนื้อหาอื่น ๆ */
+        }
+        
+        .guide-title {
+            flex: 1; /* ให้เนื้อหาทางซ้ายใช้พื้นที่ */
+            margin-right: 10px; /* ระยะห่างระหว่างสองบล็อค */
+        }
+        
+        .guide-description {
+            flex: 2; /* ให้เนื้อหาทางขวาใช้พื้นที่มากกว่า */
+        }
+        h2 {
+            font-size: 35px; /* ขนาดตัวอักษร */
+            color: #333; /* สีตัวอักษร */
+            text-align: center; /* จัดกลาง */
+            margin: 20px 0; /* ระยะห่างด้านบนและด้านล่าง */
+            line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+            font-weight: bold; /* ทำให้ตัวอักษรหนา */
+        }
+        .image-container {
+            display: flex; /* ใช้ Flexbox เพื่อจัดเรียง */
+            justify-content: space-between; /* จัดให้มีระยะห่างระหว่างรูป */
+            margin: 20px 0; /* ระยะห่างด้านบนและด้านล่าง */
+        }
+        
+        .image-container img {
+            width: 48%; /* กำหนดความกว้างเป็น 48% เพื่อให้พอดีกับพื้นที่ */
+            height: auto; /* รักษาสัดส่วน */
+            border-radius: 8px; /* มุมมน */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* เงา */
+        }
+                
+        

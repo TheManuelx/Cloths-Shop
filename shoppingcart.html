@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles-shop.css">
+    <title>Cloths Shop</title>
+    
+</head>
+<body>
+
+<header>
+    <h1 style="color: #73c2e4;">Cloths Shop</h1>
+    <div class="search-container">
+        <input type="text" placeholder="search...">
+    </div>
+    <nav>
+        <a href="product.html">Shop</a>
+        <a href="index.html">Who We Are</a>
+        <a href="#">My Profile</a>
+        <a href="shoppingcart.html" class="basket">Basket</a> <!-- ปุ่ม Basket มีสีฟ้า -->
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Basket</h1>
+    <hr>
+    
+     <!-- รายการสินค้าในตะกร้า -->
+     <div id="cart-items">
+        <!-- ตัวอย่างรายการสินค้า -->
+        <div class="product">
+            <img src="path_to_your_image1.jpg" alt="Product 1">
+            <div>เสื้อยืด - 299 บาท x 2</div>
+            <div>ราคาทั้งหมด: 598 บาท</div>
+        </div>
+        <div class="product">
+            <img src="path_to_your_image2.jpg" alt="Product 2">
+            <div>กางเกงยีนส์ - 599 บาท x 1</div>
+            <div>ราคาทั้งหมด: 599 บาท</div>
+        </div>
+        <div class="product">
+            <img src="path_to_your_image3.jpg" alt="Product 3">
+            <div>เสื้อแจ็คเก็ต - 899 บาท x 1</div>
+            <div>ราคาทั้งหมด: 899 บาท</div>
+        </div>
+    </div>
+
+    <div class="total">
+        <strong>รวมราคาทั้งหมด: 2096 บาท</strong>
+    </div>
+    <button class="checkout-button" onclick="checkout()">ชำระเงิน</button>
+</div>
+
+<footer>
+    <p>© 2024 เว็บไซต์ของเรา | สงวนลิขสิทธิ์</p>
+</footer>
+
+<script>
+    function checkout() {
+        window.location.href = 'payment.html'; // เปลี่ยนไปยังหน้าชำระเงิน
+    }
+</script>
+</body>
+</html>

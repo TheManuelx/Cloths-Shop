@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles-pay.css">
+    <title>Cloths Shop</title>
+    
+</head>
+<body>
+
+<header>
+    <h1 style="color: #73c2e4;">Cloths Shop</h1>
+    <div class="search-container">
+        <input type="text" placeholder="search...">
+    </div>
+    <nav>
+        <a href="product.html">Shop</a>
+        <a href="index.html">Who We Are</a>
+        <a href="#">My Profile</a>
+        <a href="shoppingcart.html" class="basket">Basket</a> <!-- ปุ่ม Basket มีสีฟ้า -->
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Payment</h1>
+    <hr>
+    
+    <div class="payment-content">
+        <div class="qr-code">
+            <h2>QR Code ชำระเงิน</h2>
+            <img src="path_to_your_qr_code.jpg" alt="QR Code" style="max-width: 100%; height: auto;">
+        </div>
+        <div class="payment-details">
+            <h2>รายละเอียดการชำระเงิน</h2>
+            <div class="payment-input">
+                <label for="total">Total:</label>
+                <input type="text" id="total" value="2096 บาท" disabled>
+            </div>
+            <div class="payment-input">
+                <label for="address">ที่อยู่:</label>
+                <input type="text" id="address" placeholder="กรุณากรอกที่อยู่ของคุณ">
+            </div>
+            <div class="payment-input" style="display: flex; justify-content: space-between; align-items: center;">
+                <label>Payment with credit or debit card</label>
+                <img src="img/pngegg.png" alt="Card Icon" style="width: 70px; height: auto;">
+            </div>
+            <div class="payment-input">
+                <label for="card-number">หมายเลขบัตร:</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+            </div>
+            <div class="payment-input">
+                <label for="cardholder-name">ชื่อผู้ถือบัตร:</label>
+                <input type="text" id="cardholder-name" placeholder="ชื่อผู้ถือบัตร">
+            </div>
+            <div class="payment-input">
+                <label for="expiry-date">วันหมดอายุ:</label>
+                <input type="text" id="expiry-date" placeholder="MM/YY">
+            </div>
+            <div class="payment-input">
+                <label for="cvv">หมายเลขยืนยันบัตร (CVV):</label>
+                <input type="text" id="cvv" placeholder="123">
+            </div>
+            <input type="file" id="upload" style="margin: 20px 0;">
+            <button class="upload-button">อัพโหลดหลักฐานการชำระเงิน</button>
+            <button class="buy-button" onclick="buy()">ซื้อสินค้า</button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 เว็บไซต์ของเรา | สงวนลิขสิทธิ์</p>
+</footer>
+
+<script>
+    function buy() {
+        alert("ทำรายการซื้อเรียบร้อยแล้ว!");
+        // ที่นี่คุณสามารถเพิ่มฟังก์ชันการซื้อสินค้าได้
+    }
+</script>
+
+
+</body>
+</html>
