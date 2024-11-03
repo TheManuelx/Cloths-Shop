@@ -7,7 +7,7 @@
         $pdo = new PDO($dsn, $username, $password);
         echo "Connected successfully";
     } catch (PDOException $e) {
-        echo "Connection failed: plum noob" . $e->getMessage();
+        echo "Connection failed: " . $e->getMessage();
     }
     
 ?>
