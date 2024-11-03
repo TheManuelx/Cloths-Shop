@@ -1,4 +1,13 @@
 <?php
-    $pdo = new PDO("mysql:host=db; dbname=MYSQL_DATABASE; charset=utf8", "root", "MYSQL_ROOT_PASSWORD");
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $dsn = 'mysql:host=db;dbname=MYSQL_DATABASE';
+    $username = 'root';
+    $password = 'MYSQL_ROOT_PASSWORD';
+    
+    try {
+        $pdo = new PDO($dsn, $username, $password);
+        echo "Connected successfully";
+    } catch (PDOException $e) {
+        echo "Connection failed: plum noob" . $e->getMessage();
+    }
+    
 ?>

@@ -7,8 +7,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['user_pass'];
 
 
-    $stmt = $pdo->prepare("SELECT * FROM user WHERE user_name = :username");
-    $stmt->bindParam(":username", $username);
+    $stmt = $pdo->prepare("SELECT * FROM user WHERE user_name = :user_name");
+    $stmt->bindParam(":user_name", $username);
     $stmt->execute();
     
     if ($stmt->rowCount() > 0) {
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
         if (password_verify($password, $row['user_pass'])) {
             $_SESSION['user_name'] = $username;
-            header("Location: main.html");
+            header("Location: profile.html");
             exit();
         } else {
             echo "รหัสผ่านไม่ถูกต้อง";
